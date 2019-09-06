@@ -6,13 +6,13 @@ class BatchRename():
     批量重命名文件夹中的图片文件
     '''
     def __init__(self):
-        self.path = 'E:\Pictures\Saved Pictures\美图'     #存放图片的文件夹路径
+        self.path = 'E:\React\my-blog\Blog_Album\photos'     #存放图片的文件夹路径
     def rename(self):
         filelist = os.listdir(self.path)
         total_num = len(filelist)
         i = 1
         for item in filelist:
-            if item.endswith('.jpg'):  #指定选取的图片格式为jpg
+            if item.endswith('.png'):  #指定选取的图片格式为jpg
  
                 src = os.path.join(os.path.abspath(self.path), item)
                 # 2018-11-20_bqb00  2018-11-20_hzw00
